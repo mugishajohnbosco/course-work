@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class Sorting in descending order {
+    public static void main(String[] args) {
+        int[] numbers = {4, 2, 9, 6, 5, 1, 8, 3, 7};
+        
+        // Sort in ascending order
+        Arrays.sort(numbers);
+        
+        // Reverse the array to get descending order
+        int[] reversed = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            reversed[i] = numbers[numbers.length - 1 - i];
+        }
+        
+        System.out.println("Numbers in descending order: " + Arrays.toString(reversed));
+    }
+}
