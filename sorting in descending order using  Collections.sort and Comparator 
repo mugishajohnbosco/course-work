@@ -1,0 +1,18 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Main {
+    public static void main(String[] args) {
+        Integer[] numbers = {4, 2, 9, 6, 5, 1, 8, 3, 7};
+        
+        // Sort in descending order using Comparator
+        Arrays.sort(numbers, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer a, Integer b) {
+                return b.compareTo(a);
+            }
+        });
+        
+        System.out.println("Numbers in descending order: " + Arrays.toString(numbers));
+    }
+}
